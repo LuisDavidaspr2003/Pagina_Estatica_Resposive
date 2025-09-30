@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --letra-es--: "Poppins", sans-serif;
+    --color-primario-lerta-N--:#0a0908;
+    --color-segundario-lerta-BL--:#fff;
+}
+body{
+    background-color: var(--bagraund-color-principal--);
+    color: var(--color-primario-lerta-N--);
+    font-family: var(--letra-es--);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+
+:root{
+    --bagraund-color-nav-prin--:#0496ff;
+    --bagraund-color-container-segundario--:#d72d45;
+    --bagraund-color-container-tercer--:#29db64;
+    --bagraund-color-container-cuart--:#8f59ab;
+    --bagraund-color-bajofuter-quinto--:#ffb405;
+    --bagraund-color-footefinal--:#0a0908;
+
+    --bagraund-color-principal--:#fff;
+
+
+}
+
+
+/*_____________________________________________________________________________________________________________________________________________*/
+
+
+/* animacion de libros favoritos seccion roja */
+
+@keyframes animacion_favoribooks {
+  from {
+    opacity: 0;
+    transform:translateY(-2%)
+    
+    
+    
+  }
+
+  to {
+    opacity: 5;
+    transform:translateY(0%);
+  
+  }
+}
+
+.container__favoritebooks{
+  animation: animacion_favoribooks linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+
+/*_____________________________________________________________________________________________________________________________________________*/
+
+
+/* animacion de focus seccion verde */
+
+@keyframes animacion_container__focus {
+  from {
+    opacity: 0.5;
+    transform:translateY(-20%);
+    background-color: var(--bagraund-color-container-segundario--)
+
+    
+    
+  }
+
+  to {
+    opacity:1;
+    transform:translateY(0%);
+    background-color:var(--bagraund-color-container-tercer--)
+
+  
+  }
+}
+
+.container__focus{
+  animation: animacion_container__focus linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+
+
+/*_____________________________________________________________________________________________________________________________________________*/
+
+/* animacion de focus seccion morada */
+
+@keyframes animacion_container__rules_books {
+  from {
+    opacity: 0;
+    transform:translateX(90%);
+    
+  }
+
+  to {
+    opacity:1;
+    transform:translate(0%);
+  
+  }
+}
+
+.container__rules_books{
+  animation: animacion_container__rules_books linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+/*_____________________________________________________________________________________________________________________________________________*/
+
+/* animacion de focus seccion de pagos */
+
+
+
+
+@keyframes animacion_planespago {
+  from {
+    opacity: 0;
+    transform:translateY(-20%);
+    background-color: var(--bagraund-color-container-cuart--)
+;
+    
+  }
+
+  to {
+    opacity: 1;
+    transform:translateY(0);
+    background-color: var(--bagraund-color-principal--)
+;
+
+  
+  }
+}
+
+
+.planespago{
+  animation: animacion_planespago linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+
+/*_____________________________________________________________________________________________________________________________________________*/
+
+
+
+
+@keyframes animacion {
+  from {
+    opacity: 0;
+   transform:translateY(-60%);
+;
+    
+  }
+
+  to {
+    opacity: 1;
+    transform:translateY(0);
+;
+
+  
+  }
+}
+
+
+
+.dondeobtener{
+  animation: animacion linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+.footer{
+  animation: animacion linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 0%;
+}
+
+
+
+/*_____________________________________________________________________________________________________________________________________________*/
+
+
+
+
+@keyframes animacion_footer_final {
+  from {
+    opacity: 0;
+   transform:translateY(-50%);
+;
+    
+  }
+
+  to {
+    opacity: 1;
+    transform:translateY(0);
+;
+
+  
+  }
+}
+
+
+
+.footer_final{
+  animation: animacion_footer_final linear;
+  animation-timeline: view();
+  animation-range: entry -30% cover 30%;
+}
+
+
+/*_____________________________________________________________________________________________________________________________________________*/
+
+
+@keyframes animacion_anime_dere {
+  from {
+    opacity: 0;
+   transform:translateX(80%);
+;
+    
+  }
+
+  to {
+    opacity: 1;
+    transform:translateX(0);
+;
+
+  
+  }
+}
+
+
+
+#anime_dere{
+  animation: animacion_anime_dere linear;
+  animation-timeline: view();
+  animation-range: entry -30% cover 30%;
+}
+
+
+
+/*_____________________________________________________________________________________________________________________________________________*/
+
+
+
+
+
+/*_____________________________________________________________________________________________________________________________________________*/
+
+
+@keyframes animacion_anime_izque {
+  from {
+    opacity: 0;
+   transform:translateX(-80%);
+;
+    
+  }
+
+  to {
+    opacity: 1;
+    transform:translateX(0);
+;
+
+  
+  }
+}
+
+
+
+#anime_izque{
+  animation: animacion_anime_izque linear;
+  animation-timeline: view();
+  animation-range: entry -30% cover 30%;
+}
+
+
+
+/*_____________________________________________________________________________________________________________________________________________*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header{
+    background-color: var(--bagraund-color-nav-prin--);
+    height: 9%;
+}
+.header_titulo{
+    background-color: var(--bagraund-color-nav-prin--);
+    width: 200px;
+
+}
+.header_titulo_img{
+    width: 200px;
+    padding: 10% 0% 0% 30%;
+    background-color: var(--bagraund-color-nav-prin--);
+
+}
+
+
+.principal{
+    background-color:var(--bagraund-color-nav-prin--);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0%;
+    gap: 10px;
+
+}
+.principal__texto_container{
+  
+    font-family:var(--letra-es--) ;
+    margin-left: 0px;
+    margin-top: 100px;
+    width: 300%;           /* controla el ancho */
+    padding: 20px;       
+    margin-bottom: 50px;
+    gap: 10px;   /* el texto queda alineado a la derecha */
+    
+}
+
+.principal_titulo_principal{
+    font-size: 3.5em;
+    padding: 10px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-left: 100px;
+    margin-right: 0;
+    line-height: 60px;
+}
+.principal_titulo_parrafo{
+    font-size: 0.8em ;
+    margin: 2px;
+    margin-left: 100px;
+    font-weight: 100;
+    padding: 10px;
+ 
+
+}
+
+.principal_enlaces{
+    flex-direction: row;
+   display: flex;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 0;
+    margin-top: 50px;
+    max-width: 80%;
+    gap:50px;
+transition: all 0.3s ease;  /* animación suave */
+}
+
+/* Animación al pasar el mouse */
+.principal_enlaces a:hover,
+.principal_imagen_del_primeraparte:hover, 
+.imagen_container:hover,
+.planespago_cards__tarjet:hover
+
+
+{
+        
+  transform: scale(1.08); 
+  
+}
+
+/* Efecto al hacer clic */
+.principal_enlaces a:active {
+  transform: scale(0.95);  
+}
+
+
+
+.boton_enlace_apps{
+    width: 150px;
+}
+.principal_imagen_del_primeraparte{
+    margin-right: 20%;
+    max-width: 25%;
+    border-radius: 10%;
+    border-radius: 15px; /* esquinas redondeadas */
+    box-shadow: 20px 25px 0px #2e88d2; /* sombra sólida */
+    transition: all 0.3s ease;  /* animación suave */
+    
+
+   
+    
+}
+
+.logo_sub{
+    background-color:var(--bagraund-color-nav-prin--);
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+
+
+}
+
+.logo_sub_text{
+    font-size: 1em;
+    font-family: var(--letra-es--);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bagraund-color-nav-prin--);
+
+}
+
+
+
+.container__favoritebooks{
+    background-color: var(--bagraund-color-container-segundario--);
+    color:var(--color-segundario-lerta-BL--);
+    font-family: var(--letra-es--);
+
+
+
+}
+
+.container__favoritebooks_objecs{
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    display: flex;
+    gap: 10%;
+
+}
+
+.imagen_container{
+    max-width: 35%;
+    border-radius: 2%;
+    margin-left: 10%; 
+    transition: all 0.3s ease;  /* animación suave */
+
+}
+
+
+
+.img_tma_favoritebooks{
+    max-width: 8%;
+}
+
+
+.title_favoritebooks{
+font-size: 2.5em;
+font-weight: 600;
+margin-right: 10%;
+}
+.container__favoritebooks_objecs#parrafo__favoritebooks{
+    font-size: 1em;
+    font-weight: 100;
+
+
+}
+
+
+.container__focus{
+    color:var(--color-primario-lerta-N--);
+    font-family: var(--letra-es--);
+    background-color: var(--bagraund-color-container-tercer--);
+
+}
+
+.container__rules_books{
+    color:var(--color-segundario-lerta-BL--);
+    font-family: var(--letra-es--);
+    background-color:var(--bagraund-color-container-cuart--);
+
+}
+
+.planespago{
+    
+    background-color: var(--bagraund-color-principal--);
+    font-size: var(--letra-es--);
+    color: var(--color-primario-lerta-N--);
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+
+}
+
+.planespago_cards{
+    display: flex;
+    gap: 15PX;
+    padding: 3% 10% 15% 12%;
+
+
+}
+.planespago_cards__tarjet{
+    width: 380px;
+    height: 450px;
+    border-radius: 3%;
+    transition: 1s;
+    text-align: center;
+    text-decoration:none;
+}
+.planespago_cards__tarjet a {
+  text-decoration: none;
+  color: var(--color-segundario-lerta-BL--);
+  background: var(--bagraund-color-footefinal--);
+  padding: 12px 30px;       /* alto x ancho */
+  border-radius: 8px;
+  display: block;           /* ocupa todo el ancho disponible */
+  text-align: center;       /* centra el texto */
+  width: 80%;               /* ancho del botón (puedes usar 100% o un valor fijo en px) */
+  margin: 10%;        /* centra horizontalmente */
+  transition: 2s;
+}
+
+.planespago_cards__tarjet a:hover{
+     transform: scale(1.08);
+     background-color:var(--bagraund-color-principal--);
+    color: var(--color-primario-lerta-N--);
+
+}
+
+
+
+
+
+.planespago_cards__tarjet h2{
+    padding: 10% 0% 0% 0%;
+    font-weight: 300;
+    font-size: 1.8em;
+}
+
+.text_cards_num{
+     padding: 5% 0% 1% 0%;
+     font-size: 1.5em;
+     font-weight: 100;
+
+}
+
+
+.text_cards_num strong{
+     font-weight: 500;
+    font-size: 2em;
+}
+
+.cards_text{
+    font-weight: 300;
+    padding: 0% 0% 1% 15%;
+    text-align: left;
+
+}
+
+.cards_text p{
+        padding: 0% 0% 3% 0%;
+        font-size: 0.9em;
+
+}
+
+.cards_text img {
+  width: 16px;   /* ajusta el ancho */
+  height: 16px;  /* ajusta el alto */
+  margin-right: 8px; /* separa del texto */
+  vertical-align: middle; /* alinea con el texto */
+}
+#tarjet_color_two .icon-check { color: #d72d45; }
+
+
+.planespago_cards__tarjet#tarjet_color_one {
+  background-color: var(--bagraund-color-nav-prin--);
+  box-shadow: 0 10px 10px rgba(4, 150, 255, 0.6); /* usa el azul */
+}
+
+.planespago_cards__tarjet#tarjet_color_two {
+  background-color: var(--bagraund-color-container-segundario--);
+  box-shadow: 0 10px 10px rgba(215, 45, 69, 0.6); /* usa el rojo */
+  color: var(--color-segundario-lerta-BL--);
+}
+
+.planespago_cards__tarjet#tarjet_color_three {
+  background-color: var(--bagraund-color-container-tercer--);
+  box-shadow: 10px 10px 20px rgba(41, 219, 100, 0.6); /* usa el verde */
+
+}
+
+
+.planespago .title_favoritebooks {
+  padding: 7% 0px 0px 12%; /* arriba derecha abajo izquierda */
+  font-size: 2.8em;
+}
+.planespago #parrafo__favoritebooks {
+  padding: 0 0 20px 12%;
+}
+
+
+
+
+.dondeobtener{
+    font-family: var(--letra-es--);
+    padding: 0% 0px 5% 12%; 
+}
+
+
+.dondeobtener_texto h2{
+padding: 0% 0px 20px 0%; /* arriba derecha abajo izquierda */
+  font-size: 2.8em;
+
+}
+
+.dondeobtener_texto p{
+    padding: 0 0 20px 0%;
+    font-size: 1em;
+
+}
+
+.dondeobtener_acordeon{
+    padding: 0px 15% 0px 0%;
+    font-size: 1.2em;
+    font-weight: 550;
+
+}
+
+.dondeobtener_acordeon p{
+    margin: 15px 0 15px 0;
+}
+
+.dondeobtener_acordeon details{
+    padding: 0px 15% 0px 0%;
+    font-weight: 300;
+    
+}
+
+
+.dondeobtener_acordeon span{
+ padding-left: 60%;
+ cursor: pointer;
+}
+
+
+.footer_final{
+    background-color: var(--bagraund-color-bajofuter-quinto--);
+    display: flex;
+    justify-content: center;
+    padding: 50px 0% 0px 0%;
+  
+}
+.footer_text{
+margin: 10px;
+}
+
+
+
+.footer{
+    background-color:var(--bagraund-color-footefinal--);
+}
+
+.footer_titulo_img{
+    width: 200px;
+    padding: 20% 0% 0% 40%;
+
+}
+
+.foooter_titulo{
+    background-color:var(--bagraund-color-footefinal--);
+    width: 200px;
+    padding: 2% 0% 0% 10%;
+
+}
+
