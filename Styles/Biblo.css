@@ -4,6 +4,15 @@
   --letra-es--: "Poppins", sans-serif;
     --color-primario-lerta-N--:#0a0908;
     --color-segundario-lerta-BL--:#fff;
+    --bagraund-color-nav-prin--:#0496ff;
+    --bagraund-color-container-segundario--:#d72d45;
+    --bagraund-color-container-tercer--:#29db64;
+    --bagraund-color-container-cuart--:#8f59ab;
+    --bagraund-color-bajofuter-quinto--:#ffb405;
+    --bagraund-color-footefinal--:#0a0908;
+
+    --bagraund-color-principal--:#fff;
+
 }
 body{
     background-color: var(--bagraund-color-principal--);
@@ -22,18 +31,7 @@ body{
 
 }
 
-:root{
-    --bagraund-color-nav-prin--:#0496ff;
-    --bagraund-color-container-segundario--:#d72d45;
-    --bagraund-color-container-tercer--:#29db64;
-    --bagraund-color-container-cuart--:#8f59ab;
-    --bagraund-color-bajofuter-quinto--:#ffb405;
-    --bagraund-color-footefinal--:#0a0908;
 
-    --bagraund-color-principal--:#fff;
-
-
-}
 
 
 /*_____________________________________________________________________________________________________________________________________________*/
@@ -328,53 +326,56 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
-    padding: 0%;
+    padding-bottom: 4%;
     gap: 10px;
 
 }
+
+
+.principal_one{
+  display: flex;
+}
+
+
+
+
 .principal__texto_container{
   
     font-family:var(--letra-es--) ;
     margin-left: 0px;
     margin-top: 100px;
-    width: 300%;           /* controla el ancho */
+    width: 50%;           /* controla el ancho */
     padding: 20px;       
     margin-bottom: 50px;
     gap: 10px;   /* el texto queda alineado a la derecha */
     
 }
 
-.principal_titulo_principal{
-    font-size: 3.5em;
-    padding: 10px;
-    font-weight: 600;
-    margin-top: 0;
-    margin-left: 100px;
-    margin-right: 0;
-    line-height: 60px;
-}
-.principal_titulo_parrafo{
-    font-size: 0.8em ;
-    margin: 2px;
-    margin-left: 100px;
-    font-weight: 100;
-    padding: 10px;
- 
-
+.principal_titulo_principal {
+  font-size: 3.5em;
+  padding: 10px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-left: 100px;
+  line-height: 60px;
 }
 
-.principal_enlaces{
-    flex-direction: row;
-   display: flex;
-    margin-bottom: 100px;
-    margin-left: 100px;
-    margin-right: 0;
-    margin-top: 50px;
-    max-width: 80%;
-    gap:50px;
-transition: all 0.3s ease;  /* animación suave */
+.principal_titulo_parrafo {
+  font-size: 1em;
+  margin: 2px 0 0 100px;
+  font-weight: 300;
+  padding: 10px;
 }
+
+.principal_enlaces {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0 100px 100px;
+  max-width: 80%;
+  gap: 50px;
+  transition: all 0.3s ease;
+}
+
 
 /* Animación al pasar el mouse */
 .principal_enlaces a:hover,
@@ -399,25 +400,33 @@ transition: all 0.3s ease;  /* animación suave */
 .boton_enlace_apps{
     width: 150px;
 }
-.principal_imagen_del_primeraparte{
-    margin-right: 20%;
-    max-width: 25%;
-    border-radius: 10%;
-    border-radius: 15px; /* esquinas redondeadas */
-    box-shadow: 20px 25px 0px #2e88d2; /* sombra sólida */
-    transition: all 0.3s ease;  /* animación suave */
-    
+.principal_imagen_del_primeraparte {
+  margin-right: 20%;
+  margin-bottom: 10%;
+  margin-top: 2%;
+  width: 50%;
+  max-width: 400px; /* límite para que no crezca demasiado */
+  border-radius: 15px; /* esquinas redondeadas */
+  box-shadow: 20px 25px 0px #2e88d2; /* sombra sólida */
+  transition: all 0.3s ease;  /* animación suave */
+}
 
-   
-    
+
+
+.logo_sub_emcabe {
+  width: 100%;
+  background-color: var(--bagraund-color-nav-prin--); /* corregí nombre de variable */
+  text-align: center;
+  padding: 1% 0.5em;
 }
 
 .logo_sub{
     background-color:var(--bagraund-color-nav-prin--);
-    flex-direction: row;
+    justify-content: space-around;
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
     padding-bottom: 5%;
+   
 
 
 }
@@ -429,7 +438,12 @@ transition: all 0.3s ease;  /* animación suave */
     display: flex;
     justify-content: center;
     background-color: var(--bagraund-color-nav-prin--);
+    
 
+}
+
+.logo_sub_text img{
+  width: 10%;
 }
 
 
@@ -505,39 +519,44 @@ margin-right: 10%;
 
 }
 
-.planespago_cards{
-    display: flex;
-    gap: 15PX;
-    padding: 3% 10% 15% 12%;
-
-
+.planespago_cards {
+  display: flex;
+  flex-wrap: wrap; /* permite que las tarjetas bajen si no caben */
+  gap: 15px;
+  padding: 3% 10% 15% 12%;
+  justify-content: center;
 }
-.planespago_cards__tarjet{
-    width: 380px;
-    height: 450px;
-    border-radius: 3%;
-    transition: 1s;
-    text-align: center;
-    text-decoration:none;
+
+.planespago_cards__tarjet {
+  flex: 1 1 300px;   /* se reduce manteniendo proporción */
+  max-width: 400px;  /* nunca se pasan de este tamaño */
+  min-width: 250px;  /* nunca se hacen más pequeñas que esto */
+  border-radius: 3%;
+  transition: 0.5s;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  box-sizing: border-box;
 }
+
+/* Botón dentro de la tarjeta */
 .planespago_cards__tarjet a {
   text-decoration: none;
   color: var(--color-segundario-lerta-BL--);
   background: var(--bagraund-color-footefinal--);
-  padding: 12px 30px;       /* alto x ancho */
+  padding: 12px 30px;
   border-radius: 8px;
-  display: block;           /* ocupa todo el ancho disponible */
-  text-align: center;       /* centra el texto */
-  width: 80%;               /* ancho del botón (puedes usar 100% o un valor fijo en px) */
-  margin: 10%;        /* centra horizontalmente */
-  transition: 2s;
+  display: block;
+  text-align: center;
+  width: 80%;
+  margin: 20px auto 0;
+  transition: 0.3s;
 }
 
-.planespago_cards__tarjet a:hover{
-     transform: scale(1.08);
-     background-color:var(--bagraund-color-principal--);
-    color: var(--color-primario-lerta-N--);
-
+.planespago_cards__tarjet a:hover {
+  transform: scale(1.05);
+  background-color: var(--bagraund-color-principal--);
+  color: var(--color-primario-lerta-N--);
 }
 
 
@@ -559,7 +578,7 @@ margin-right: 10%;
 
 
 .text_cards_num strong{
-     font-weight: 500;
+    font-weight: 500;
     font-size: 2em;
 }
 
@@ -660,7 +679,7 @@ padding: 0% 0px 20px 0%; /* arriba derecha abajo izquierda */
     background-color: var(--bagraund-color-bajofuter-quinto--);
     display: flex;
     justify-content: center;
-    padding: 50px 0% 0px 0%;
+    padding: 50px 50px 0px 0%;
   
 }
 .footer_text{
@@ -686,3 +705,92 @@ margin: 10px;
 
 }
 
+
+
+
+
+
+
+
+/* PArte responsive medeai query */
+/*---____________________________________________________________________________________________________*/
+
+
+@media  (max-width: 1100px){
+
+
+  .principal_one {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .principal_imagen_del_primeraparte {
+    margin: 2rem auto 0 auto; /* centra la imagen */
+    width: 70%;              /* más grande en móviles */
+    max-width: 300px;
+  }
+
+
+      .logo_sub_text {
+        font-size: 1.2em;
+        margin-bottom: 1rem;
+        margin: 2rem auto 0 auto;
+
+      }
+
+      .logo_sub {
+        flex-direction: column;
+        gap: 1rem;
+
+      }
+
+      .logo_sub img {
+        width: 60%;
+        max-width: 200px;
+       margin: 2rem auto 0 auto;
+        
+      }
+      .principal_titulo_principal {
+    font-size: 2.5em;
+    margin-left: 50px;
+    line-height: 45px;
+  }
+
+  .principal_titulo_parrafo {
+    font-size: 0.9em;
+    margin-left: 50px;
+  }
+
+  .principal_enlaces {
+    margin-left: 50px;
+    gap: 30px;
+    flex-wrap: wrap; /* si no caben, se bajan */
+  }
+}
+
+/* 📱 Pantallas pequeñas (móviles ≤ 600px) */
+@media (max-width: 600px) {
+  .principal_titulo_principal {
+    font-size: 1.8em;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.2em;
+  }
+
+  .principal_titulo_parrafo {
+    font-size: 0.85em;
+    margin: 10px auto;
+    text-align: center;
+    padding: 5px;
+    max-width: 90%;
+  }
+
+  .principal_enlaces {
+    flex-direction: column; /* los enlaces se apilan */
+    align-items: center;
+    margin: 30px auto;
+    gap: 20px;
+    max-width: 100%;
+  }
+}
